@@ -1,0 +1,21 @@
+{% raw %}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  
+
+  <body>
+    <div class="container">
+      <img src="static/logo.jpeg" alt="Logo da Empresa">
+      <form action="{{ url_for('teclado', nome=nome) }}" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <button type="submit" class="btn-entrar">Entrar</button>
+      </form>
+    </div>
+  </body>
+</html>
+{% endraw %}

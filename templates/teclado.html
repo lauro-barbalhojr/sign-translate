@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Teclado e mensagem</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+    <h1>Digite o nome:</h1>
+    <input type="text" id="nome-teclado">
+    <div id="teclado">
+      <button onclick="adicionarLetra('A')">A</button>
+      <button onclick="adicionarLetra('B')">B</button>
+      <button onclick="adicionarLetra('C')">C</button>
+      <button onclick="adicionarLetra('D')">D</button>
+      <button onclick="adicionarLetra('E')">E</button>
+      <button onclick="adicionarLetra('F')">F</button>
+      <button onclick="adicionarLetra('G')">G</button>
+      <button onclick="adicionarLetra('H')">H</button>
+      <button onclick="adicionarLetra('I')">I</button>
+      <button onclick="adicionarLetra('J')">J</button>
+      <button onclick="adicionarLetra('K')">K</button>
+      <button onclick="adicionarLetra('L')">L</button>
+      <button onclick="adicionarLetra('M')">M</button>
+      <button onclick="adicionarLetra('N')">N</button>
+      <button onclick="adicionarLetra('O')">O</button>
+      <button onclick="adicionarLetra('P')">P</button>
+      <button onclick="adicionarLetra('Q')">Q</button>
+      <button onclick="adicionarLetra('R')">R</button>
+      <button onclick="adicionarLetra('S')">S</button>
+      <button onclick="adicionarLetra('T')">T</button>
+      <button onclick="adicionarLetra('U')">U</button>
+      <button onclick="adicionarLetra('V')">V</button>
+      <button onclick="adicionarLetra('W')">W</button>
+      <button onclick="adicionarLetra('X')">X</button>
+      <button onclick="adicionarLetra('Y')">Y</button>
+      <button onclick="adicionarLetra('Z')">Z</button>
+      <!-- e assim por diante para todas as outras letras do teclado -->
+    </div>
+    <button onclick="enviarMensagem()">Enviar</button>
+    
+    <script>
+      function adicionarLetra(letra) {
+        var campo = document.getElementById("nome-teclado");
+        campo.value += letra;
+      }
+      
+	function enviarMensagem() {
+		document.forms[0].submit();
+	}
+
+    </script>
+  </body>
+</html>
